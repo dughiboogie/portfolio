@@ -1,6 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import Link from "next/link";
+// import HomeIcon from "../icons/homeIcon";
 
 interface NavbarButtonParameters {
   // Link of the button
@@ -10,6 +11,54 @@ interface NavbarButtonParameters {
 }
 
 function NavbarButton({ buttonLink, buttonName }: NavbarButtonParameters) {
+  /*
+  function iconSwitch(buttonName: string) {
+    switch (buttonName) {
+      case "Home":
+        return (
+          <div>
+            <HomeIcon></HomeIcon>;
+          </div>
+        );
+      case "About me":
+        return (
+          <div className="flex-initial max-h-1">
+            <HomeIcon></HomeIcon>;
+          </div>
+        );
+      case "Work":
+        return (
+          <div className="flex-initial max-h-1">
+            <HomeIcon></HomeIcon>;
+          </div>
+        );
+      case "Projects":
+        return (
+          <div className="flex-initial max-h-1">
+            <HomeIcon></HomeIcon>;
+          </div>
+        );
+      case "Gallery":
+        return (
+          <div className="flex-initial max-h-1">
+            <HomeIcon></HomeIcon>;
+          </div>
+        );
+      case "Contact":
+        return (
+          <div className="flex-initial max-h-1">
+            <HomeIcon></HomeIcon>;
+          </div>
+        );
+
+      default:
+        break;
+    }
+  }
+  */
+
+  // <div>{iconSwitch(buttonName)}</div>
+
   return (
     <div className="flex">
       <Link
