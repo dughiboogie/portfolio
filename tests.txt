@@ -1,17 +1,16 @@
-3:"$Sreact.fragment"
-4:I[5244,[],""]
-5:I[3866,[],""]
-6:I[7033,[],"ClientPageRoot"]
-7:I[5027,["867","static/chunks/867-40f8f9922dec74d9.js","320","static/chunks/app/tests/page-40cc15bb3e171db4.js"],"default"]
-a:I[6213,[],"OutletBoundary"]
-c:I[6213,[],"MetadataBoundary"]
-e:I[6213,[],"ViewportBoundary"]
-10:I[4835,[],""]
-1:HL["/portfolio/_next/static/css/8c0dabc0cd8d1c73.css","style"]
-2:HL["/portfolio/_next/static/css/2e4067d47fd5133c.css","style"]
-0:{"P":null,"b":"yT6A7Rs8GJqB2ruwTmvp-","p":"/portfolio","c":["","tests"],"i":false,"f":[[["",{"children":["tests",{"children":["__PAGE__",{}]}]},"$undefined","$undefined",true],["",["$","$3","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/portfolio/_next/static/css/8c0dabc0cd8d1c73.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}]],["$","html",null,{"lang":"en","children":["$","body",null,{"className":"__variable_d6d455 __variable_68cc06 antialiased","children":["$","$L4",null,{"parallelRouterKey":"children","segmentPath":["children"],"error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L5",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":["$","main",null,{"style":{"padding":"2rem","textAlign":"center"},"children":[["$","h1",null,{"children":"404 - Page Not Found"}],["$","p",null,{"children":"These are not the droids you`'`re looking for."}]]}],"notFoundStyles":[]}]}]}]]}],{"children":["tests",["$","$3","c",{"children":[null,["$","$L4",null,{"parallelRouterKey":"children","segmentPath":["children","tests","children"],"error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L5",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","notFoundStyles":"$undefined"}]]}],{"children":["__PAGE__",["$","$3","c",{"children":[["$","$L6",null,{"Component":"$7","searchParams":{},"params":{},"promises":["$@8","$@9"]}],[["$","link","0",{"rel":"stylesheet","href":"/portfolio/_next/static/css/2e4067d47fd5133c.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}]],["$","$La",null,{"children":"$Lb"}]]}],{},null]},null]},null],["$","$3","h",{"children":[null,["$","$3","0lmFn5q3R3tzYQD0G8Zoq",{"children":[["$","$Lc",null,{"children":"$Ld"}],["$","$Le",null,{"children":"$Lf"}],null]}]]}]]],"m":"$undefined","G":["$10","$undefined"],"s":false,"S":true}
+2:"$Sreact.fragment"
+3:I[5244,[],""]
+4:I[3866,[],""]
+5:I[7033,[],"ClientPageRoot"]
+6:I[5027,["867","static/chunks/867-914446b77045f7b4.js","320","static/chunks/app/tests/page-9a0e38acd91a0305.js"],"default"]
+9:I[6213,[],"OutletBoundary"]
+b:I[6213,[],"MetadataBoundary"]
+d:I[6213,[],"ViewportBoundary"]
+f:I[4835,[],""]
+1:HL["/portfolio/_next/static/css/196d402c5fdcab49.css","style"]
+0:{"P":null,"b":"u4onWwXq6YDE9rwZEiWEr","p":"/portfolio","c":["","tests"],"i":false,"f":[[["",{"children":["tests",{"children":["__PAGE__",{}]}]},"$undefined","$undefined",true],["",["$","$2","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/portfolio/_next/static/css/196d402c5fdcab49.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}]],["$","html",null,{"lang":"en","children":["$","body",null,{"className":"__variable_d6d455 __variable_68cc06 antialiased","children":["$","$L3",null,{"parallelRouterKey":"children","segmentPath":["children"],"error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L4",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":["$","main",null,{"style":{"padding":"2rem","textAlign":"center"},"children":[["$","h1",null,{"children":"404 - Page Not Found"}],["$","p",null,{"children":"These are not the droids you`'`re looking for."}]]}],"notFoundStyles":[]}]}]}]]}],{"children":["tests",["$","$2","c",{"children":[null,["$","$L3",null,{"parallelRouterKey":"children","segmentPath":["children","tests","children"],"error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L4",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","notFoundStyles":"$undefined"}]]}],{"children":["__PAGE__",["$","$2","c",{"children":[["$","$L5",null,{"Component":"$6","searchParams":{},"params":{},"promises":["$@7","$@8"]}],null,["$","$L9",null,{"children":"$La"}]]}],{},null]},null]},null],["$","$2","h",{"children":[null,["$","$2","vB8aQwVTwKGU7LDvGzxt4",{"children":[["$","$Lb",null,{"children":"$Lc"}],["$","$Ld",null,{"children":"$Le"}],null]}]]}]]],"m":"$undefined","G":["$f","$undefined"],"s":false,"S":true}
+7:{}
 8:{}
-9:{}
-f:[["$","meta","0",{"name":"viewport","content":"width=device-width, initial-scale=1"}]]
-d:[["$","meta","0",{"charSet":"utf-8"}],["$","title","1",{"children":"Marco Dugatto Portfolio"}],["$","meta","2",{"name":"description","content":"Showcasing my projects and skills."}],["$","link","3",{"rel":"icon","href":"/portfolio/favicon.ico","type":"image/x-icon","sizes":"16x16"}]]
-b:null
+e:[["$","meta","0",{"name":"viewport","content":"width=device-width, initial-scale=1"}]]
+c:[["$","meta","0",{"charSet":"utf-8"}],["$","title","1",{"children":"Marco Dugatto Portfolio"}],["$","meta","2",{"name":"description","content":"Showcasing my projects and skills."}],["$","link","3",{"rel":"icon","href":"/portfolio/favicon.ico","type":"image/x-icon","sizes":"16x16"}]]
+a:null
