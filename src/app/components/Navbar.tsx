@@ -11,7 +11,7 @@ interface NavbarButtonParameters {
 
 function NavbarButton({ buttonLink, buttonName }: NavbarButtonParameters) {
   return (
-    <div>
+    <div className="flex">
       <Link
         className="z-20 flex-1 text-sm text-white font-bold"
         href={buttonLink}
@@ -19,9 +19,9 @@ function NavbarButton({ buttonLink, buttonName }: NavbarButtonParameters) {
         <motion.div
           className="z-10 bg-neutral-900 px-5 py-2 rounded-xl border border-gray-400"
           whileTap={{ scale: 0.9 }}
-          initial={{ backgroundColor: "#262626" }}
-          whileHover={{ backgroundColor: "#171717" }}
-          animate={{ backgroundColor: "#262626" }}
+          initial={{ backgroundColor: "#000000", borderColor: "#000000" }}
+          whileHover={{ backgroundColor: "#262626", borderColor: "#9ca3af" }}
+          animate={{ backgroundColor: "#000000", borderColor: "#000000" }}
           transition={{ type: "tween", ease: "easeOut" }}
         >
           {buttonName}
@@ -33,13 +33,34 @@ function NavbarButton({ buttonLink, buttonName }: NavbarButtonParameters) {
 
 const Navbar = () => {
   return (
-    <div className="z-0 p-2 bg-black rounded-2xl flex justify-center items-center gap-x-2 w-fit place-self-center border border-gray-400">
-      <NavbarButton buttonLink="/" buttonName="Home"></NavbarButton>
-      <NavbarButton buttonLink="/aboutMe" buttonName="About me"></NavbarButton>
-      <NavbarButton buttonLink="/work" buttonName="Work"></NavbarButton>
-      <NavbarButton buttonLink="/projects" buttonName="Projects"></NavbarButton>
-      <NavbarButton buttonLink="/gallery" buttonName="Gallery"></NavbarButton>
-      <NavbarButton buttonLink="/contact" buttonName="Contact"></NavbarButton>
+    <div className="flex justify-center">
+      <motion.div
+        initial={{ opacity: 0, y: -30 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 1.5, ease: "easeInOut" }}
+        className="text-tea-green"
+      >
+        <div className="z-0 p-2 bg-black rounded-2xl flex justify-center items-center gap-x-2 w-fit place-self-center border border-gray-400">
+          <NavbarButton buttonLink="/" buttonName="Home"></NavbarButton>
+          <NavbarButton
+            buttonLink="/aboutMe"
+            buttonName="About me"
+          ></NavbarButton>
+          <NavbarButton buttonLink="/work" buttonName="Work"></NavbarButton>
+          <NavbarButton
+            buttonLink="/projects"
+            buttonName="Projects"
+          ></NavbarButton>
+          <NavbarButton
+            buttonLink="/gallery"
+            buttonName="Gallery"
+          ></NavbarButton>
+          <NavbarButton
+            buttonLink="/contact"
+            buttonName="Contact"
+          ></NavbarButton>
+        </div>
+      </motion.div>
     </div>
   );
 };

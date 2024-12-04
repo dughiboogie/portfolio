@@ -6,27 +6,40 @@ import Navbar from "./components/navbar";
 
 export default function Home() {
   return (
-    <div className="w-screen h-screen bg-neutral-900">
+    <div className="w-screen h-screen bg-neutral-950">
       <div className="mt-10">
         <Navbar></Navbar>
 
         <div className="flex justify-center">
           <motion.div
-            initial={{ opacity: 0, clipPath: "inset(0 100% 100% 0)" }}
-            animate={{ opacity: 1, clipPath: "inset(0 0 0 0)" }}
-            transition={{ duration: 2, ease: "easeInOut" }}
+            initial={{
+              opacity: 0,
+              clipPath: "inset(0 100% 100% 0 round 1rem)",
+              filter: "blur(10px)",
+            }}
+            animate={{
+              opacity: 1,
+              clipPath: "inset(0 0 0 0 round 1rem)",
+              filter: "blur(0px)",
+            }}
+            transition={{
+              clipPath: { duration: 2, ease: "easeInOut" },
+              filter: { duration: 2.5, ease: "easeInOut" },
+            }}
             className="text-tea-green"
           >
-            <h1>Welcome to My Portfolio</h1>
-            <p className="max-w-3xl">
+            <h1 className="font-roboto font-extrabold text-6xl">
+              Welcome to My Portfolio
+            </h1>
+            <p className="max-w-3xl font-roboto text-2xl">
               Hi there! I am Marco Dugatto (Dughi for short), a 29 years old guy
               with a constant curiosity for what life has to offer. I am also
               italian, so if my English is bad I humbly beg your pardon in
               spaghetti. I have way too many passions and way too little time to
-              follow them all, but isn't that the story of everyone's life?
-              Fortunately for me I have learned to focus on just a bunch of
-              them, so since January 2021 I've been learning to make video
-              games.
+              follow them all, but isn&apos;t that the story of everyone&apos;s
+              life? Fortunately for me I have learned to focus on just a bunch
+              of them, so since January 2021 I&apos;ve been learning to make
+              video games.
             </p>
           </motion.div>
         </div>
@@ -34,9 +47,20 @@ export default function Home() {
         {/* All items inside this motion.div will be rendered with a left-to-right transition */}
         <div className="flex justify-center">
           <motion.div
-            initial={{ opacity: 0, clipPath: "inset(0 100% 0 0)" }}
-            animate={{ opacity: 1, clipPath: "inset(0 0 0 0)" }}
-            transition={{ duration: 1.5, delay: 1.5, ease: "easeInOut" }}
+            initial={{
+              opacity: 0,
+              clipPath: "inset(0 100% 0 0 round 1rem)",
+              filter: "blur(10px)",
+            }}
+            animate={{
+              opacity: 1,
+              clipPath: "inset(0 0 0 0 round 1rem)",
+              filter: "blur(0px)",
+            }}
+            transition={{
+              clipPath: { duration: 1.5, delay: 1, ease: "easeInOut" },
+              filter: { duration: 1, delay: 1, ease: "easeInOut" },
+            }}
             className="text-tea-green"
           >
             <div
