@@ -10,7 +10,7 @@ export default function Home() {
     <div className="w-screen h-screen overflow-y-auto bg-black">
       <BlurredMountainsBackground />
 
-      <div className="mt-10 relative z-20">
+      <div className="md:mt-28 mt-8 relative z-20">
         <Navbar></Navbar>
 
         <div className="flex flex-col items-center text-center px-4 md:px-10">
@@ -31,9 +31,9 @@ export default function Home() {
             }}
             className="text-tea-green"
           >
-            <h1 className="font-roboto font-extrabold text-4xl md:text-6xl">
+            <p className="font-roboto font-extrabold text-4xl md:text-6xl">
               Welcome to My Portfolio
-            </h1>
+            </p>
             <p className="max-w-3xl font-roboto text-base md:text-2xl">
               Hi there! I am Marco Dugatto (Dughi for short), a 29 years old guy
               with a constant curiosity for what life has to offer. I am also
@@ -146,17 +146,17 @@ export default function Home() {
                 id augue at justo maximus lobortis. Nullam sagittis nunc eu
                 tellus dictum, sed gravida mi volutpat.
               </p>
-              <div className=" self-center">
-                <Link href="/projects">
-                  <button className="mt-4 px-2 py-2 bg-rose-quartz text-black font-bold rounded-lg shadow-2xl">
-                    See My Projects
-                  </button>
-                </Link>
-              </div>
+              <Link href="/projects">
+                <button className="mt-4 px-2 py-2 bg-rose-quartz text-black font-bold rounded-lg shadow-2xl">
+                  See My Projects
+                </button>
+              </Link>
             </div>
           </motion.div>
         </div>
       </div>
+
+      <div className="py-12 md:py-4" />
     </div>
   );
 }

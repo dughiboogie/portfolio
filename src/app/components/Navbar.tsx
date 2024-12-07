@@ -82,11 +82,8 @@ const Navbar = () => {
       initial={{ opacity: 0, y: -20 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 1.5, ease: "easeInOut" }}
-      className=" z-50 fixed w-full h-fit md:top-4 bottom-20 flex justify-center"
+      className=" z-50 fixed w-full h-fit md:top-6 bottom-20 flex justify-center"
     >
-      {/* "z-0 p-2 bg-black rounded-2xl flex justify-center items-center gap-x-2  place-self-center border border-gray-400" */}
-
-      {/* "fixed w-fit sm:top-0 bottom-0 bg-black z-50 flex justify-center items-center gap-x-2 p-3 border-t sm:border-t-0 sm:border-b border-gray-400" */}
       <div className="z-0 p-2 fixed bg-black bg-opacity-90 rounded-2xl flex md:gap-x-2 gap-x-0 border border-gray-400 ">
         <NavbarButton buttonLink="/" buttonName="Home"></NavbarButton>
         <NavbarButton
