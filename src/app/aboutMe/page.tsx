@@ -142,7 +142,7 @@ const Lighting: React.FC = () => {
 
       {/* Directional light for depth and highlights */}
       <directionalLight
-        position={[10, 20, 10]}
+        position={[120, 100, 0]}
         intensity={0.8}
         color="#ffffff"
       />
@@ -158,9 +158,9 @@ const RotatingCamera: React.FC = () => {
     if (cameraRef.current) {
       const elapsedTime = clock.getElapsedTime();
       const radius = 5; // Distance of the camera from the center
-      camera.position.x = Math.cos(elapsedTime * 0.1) * radius; // Slow rotation
+      camera.position.x = Math.cos(elapsedTime * 0.02) * radius; // Slow rotation
       camera.position.y = -0.5;
-      camera.position.z = Math.sin(elapsedTime * 0.1) * radius;
+      camera.position.z = Math.sin(elapsedTime * 0.02) * radius;
       camera.lookAt(0, 0, 0); // Always look at the center of the plane
     }
   });
@@ -182,8 +182,21 @@ const Scene: React.FC = () => {
 
 const ThreeJSPage: React.FC = () => {
   return (
-    <div className="h-screen bg-black">
-      <Scene />
+    <div className="absolute w-screen h-screen bg-black">
+      {/* Background Component */}
+      <div className="absolute inset-0">
+        <Scene />
+      </div>
+
+      {/* Blur Layer */}
+      <div className="absolute inset-0 backdrop-blur-sm z-10" />
+
+      {/* Foreground Component */}
+      <div className="relative z-20">
+        <h1 className="text-4xl text-white font-bold text-center mt-40">
+          Foreground Content
+        </h1>
+      </div>
     </div>
   );
 };
