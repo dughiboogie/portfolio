@@ -4,10 +4,8 @@ import Link from "next/link";
 // import HomeIcon from "../icons/homeIcon";
 
 interface NavbarButtonParameters {
-  // Link of the button
-  buttonLink: string;
-  // Text of the button
-  buttonName: string;
+  buttonLink: string; // Link of the button
+  buttonName: string; // Text of the button
 }
 
 function NavbarButton({ buttonLink, buttonName }: NavbarButtonParameters) {
@@ -60,57 +58,50 @@ function NavbarButton({ buttonLink, buttonName }: NavbarButtonParameters) {
   // <div>{iconSwitch(buttonName)}</div>
 
   return (
-    <div className="flex">
-      <Link
-        className="z-20 flex-1 text-sm text-white font-bold"
-        href={buttonLink}
+    <Link
+      className="z-20 flex md:text-base text-sm md:max-w-fit text-white"
+      href={buttonLink}
+    >
+      <motion.div
+        className="z-10 bg-neutral-900 md:px-5 px-2 py-2 rounded-xl border border-gray-400 font-semibold"
+        whileTap={{ scale: 0.9 }}
+        initial={{ backgroundColor: "#000000", borderColor: "#000000" }}
+        whileHover={{ backgroundColor: "#262626", borderColor: "#9ca3af" }}
+        animate={{ backgroundColor: "#000000", borderColor: "#000000" }}
+        transition={{ type: "tween", ease: "easeOut" }}
       >
-        <motion.div
-          className="z-10 bg-neutral-900 px-5 py-2 rounded-xl border border-gray-400"
-          whileTap={{ scale: 0.9 }}
-          initial={{ backgroundColor: "#000000", borderColor: "#000000" }}
-          whileHover={{ backgroundColor: "#262626", borderColor: "#9ca3af" }}
-          animate={{ backgroundColor: "#000000", borderColor: "#000000" }}
-          transition={{ type: "tween", ease: "easeOut" }}
-        >
-          {buttonName}
-        </motion.div>
-      </Link>
-    </div>
+        {buttonName}
+      </motion.div>
+    </Link>
   );
 }
 
 const Navbar = () => {
   return (
-    <div className="flex justify-center">
-      <motion.div
-        initial={{ opacity: 0, y: -30 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 1.5, ease: "easeInOut" }}
-        className="text-tea-green"
-      >
-        <div className="z-0 p-2 bg-black rounded-2xl flex justify-center items-center gap-x-2 w-fit place-self-center border border-gray-400">
-          <NavbarButton buttonLink="/" buttonName="Home"></NavbarButton>
-          <NavbarButton
-            buttonLink="/aboutMe"
-            buttonName="About me"
-          ></NavbarButton>
-          <NavbarButton buttonLink="/work" buttonName="Work"></NavbarButton>
-          <NavbarButton
-            buttonLink="/projects"
-            buttonName="Projects"
-          ></NavbarButton>
-          <NavbarButton
-            buttonLink="/gallery"
-            buttonName="Gallery"
-          ></NavbarButton>
-          <NavbarButton
-            buttonLink="/contact"
-            buttonName="Contact"
-          ></NavbarButton>
-        </div>
-      </motion.div>
-    </div>
+    <motion.div
+      initial={{ opacity: 0, y: -20 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ duration: 1.5, ease: "easeInOut" }}
+      className=" z-50 fixed w-full h-fit md:top-4 bottom-20 flex justify-center"
+    >
+      {/* "z-0 p-2 bg-black rounded-2xl flex justify-center items-center gap-x-2  place-self-center border border-gray-400" */}
+
+      {/* "fixed w-fit sm:top-0 bottom-0 bg-black z-50 flex justify-center items-center gap-x-2 p-3 border-t sm:border-t-0 sm:border-b border-gray-400" */}
+      <div className="z-0 p-2 fixed bg-black bg-opacity-90 rounded-2xl flex md:gap-x-2 gap-x-0 border border-gray-400 ">
+        <NavbarButton buttonLink="/" buttonName="Home"></NavbarButton>
+        <NavbarButton
+          buttonLink="/aboutMe"
+          buttonName="About me"
+        ></NavbarButton>
+        <NavbarButton buttonLink="/work" buttonName="Work"></NavbarButton>
+        <NavbarButton
+          buttonLink="/projects"
+          buttonName="Projects"
+        ></NavbarButton>
+        <NavbarButton buttonLink="/gallery" buttonName="Gallery"></NavbarButton>
+        <NavbarButton buttonLink="/contact" buttonName="Contact"></NavbarButton>
+      </div>
+    </motion.div>
   );
 };
 
