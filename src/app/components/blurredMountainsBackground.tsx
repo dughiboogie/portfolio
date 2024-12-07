@@ -5,13 +5,13 @@ import { Canvas, useFrame } from "@react-three/fiber";
 import * as THREE from "three";
 import { createNoise2D } from "simplex-noise";
 
-const Plane: React.FC = () => {
+const Mountains: React.FC = () => {
   const noise2D = createNoise2D();
 
   // Precompute geometry and noise only once
   const geometry = useMemo(() => {
-    const planeGeometry = new THREE.PlaneGeometry(30, 30, 32, 32);
-    const positionAttribute = planeGeometry.attributes.position;
+    const mountainsGeometry = new THREE.PlaneGeometry(30, 30, 32, 32);
+    const positionAttribute = mountainsGeometry.attributes.position;
 
     for (let i = 0; i < positionAttribute.count; i++) {
       const x = positionAttribute.getX(i);
@@ -23,9 +23,9 @@ const Plane: React.FC = () => {
     }
 
     positionAttribute.needsUpdate = true; // Mark the geometry as updated
-    planeGeometry.computeVertexNormals(); // Recompute normals for lighting
+    mountainsGeometry.computeVertexNormals(); // Recompute normals for lighting
 
-    return planeGeometry;
+    return mountainsGeometry;
   }, [noise2D]);
 
   // Precompute wireframe geometry only once
@@ -89,10 +89,22 @@ const Stars: React.FC = () => {
     new THREE.BufferAttribute(starPositions, 3)
   );
 
+  const starMinSize = 0.02;
+  const starMaxSize = 0.2;
+  const starMinOpacity = 0.7;
+  const starMaxOpacity = 0.9;
+
   return (
     <points>
       <primitive object={geometry} />
-      <pointsMaterial size={0.05} color="#ffffff" transparent opacity={0.7} />
+      <pointsMaterial
+        size={Math.random() * (starMaxSize - starMinSize) + starMinSize}
+        color="#ffffff"
+        transparent
+        opacity={
+          Math.random() * (starMaxOpacity - starMinOpacity) + starMinOpacity
+        }
+      />
     </points>
   );
 };
@@ -172,7 +184,7 @@ const Scene: React.FC = () => {
   return (
     <Canvas gl={{ antialias: true, powerPreference: "high-performance" }}>
       <Lighting />
-      <Plane />
+      <Mountains />
       <Stars />
       <Atmosphere />
       <RotatingCamera />
@@ -180,7 +192,7 @@ const Scene: React.FC = () => {
   );
 };
 
-const ThreeJSPage: React.FC = () => {
+const BlurredMountainsBackground: React.FC = () => {
   return (
     <div className="absolute w-screen h-screen bg-black">
       {/* Background Component */}
@@ -190,15 +202,8 @@ const ThreeJSPage: React.FC = () => {
 
       {/* Blur Layer */}
       <div className="absolute inset-0 backdrop-blur-sm z-10" />
-
-      {/* Foreground Component */}
-      <div className="relative z-20">
-        <h1 className="text-4xl text-white font-bold text-center mt-40">
-          Foreground Content
-        </h1>
-      </div>
     </div>
   );
 };
 
-export default ThreeJSPage;
+export default BlurredMountainsBackground;
