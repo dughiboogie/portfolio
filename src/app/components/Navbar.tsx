@@ -55,20 +55,22 @@ const Navbar = () => {
             buttonName="About me"
             iconPath="/icons/aboutMe.svg"
           ></NavbarButton>
+          {/*
           <NavbarButton
             buttonLink="/work"
             buttonName="Work"
             iconPath="/icons/work.svg"
           ></NavbarButton>
           <NavbarButton
-            buttonLink="/projects"
-            buttonName="Projects"
-            iconPath="/icons/projects.svg"
-          ></NavbarButton>
-          <NavbarButton
             buttonLink="/gallery"
             buttonName="Gallery"
             iconPath="/icons/gallery.svg"
+          ></NavbarButton>
+          */}
+          <NavbarButton
+            buttonLink="/projects"
+            buttonName="Projects"
+            iconPath="/icons/projects.svg"
           ></NavbarButton>
         </div>
       </motion.div>

@@ -15,6 +15,7 @@ export default function Home() {
         <Navbar></Navbar>
 
         <div className="flex flex-col items-center text-center px-4 md:px-10 mt-4 md:mt-8 md:mb-8">
+          {/* Header */}
           <motion.div
             initial={{
               opacity: 0,
@@ -33,10 +34,7 @@ export default function Home() {
             className="text-tea-green"
           >
             <p className="font-roboto font-extrabold text-4xl md:text-7xl">
-              Marco Dugatto - DughiBoogie
-            </p>
-            <p className="font-roboto font-extrabold text-3xl md:text-5xl mx-4">
-              Game Developer | Nature Explorer | Music Aficionado
+              Marco Dugatto | DughiBoogie
             </p>
             <p className="max-w-md md:max-w-3xl font-roboto text-base text-left md:text-2xl inline-block">
               It's a me, Marco!<br></br>
@@ -44,11 +42,64 @@ export default function Home() {
               experiences.<br></br> I dream of crafting such adventures to make
               people feel the same passion that drives me.
             </p>
+
+            <div className="my-8 flex flex-col items-center justify-center md:gap-8 gap-4 max-w-full">
+              <Link className="flex text-base" href="/aboutMe">
+                <motion.div
+                  className="md:px-4 px-4 md:py-4 py-2 rounded-xl border border-gray-400 flex items-center gap-2"
+                  whileTap={{ scale: 0.9 }}
+                  initial={{
+                    backgroundColor: "#0000008D",
+                  }}
+                  whileHover={{
+                    backgroundColor: "#121212FF",
+                  }}
+                  animate={{
+                    backgroundColor: "#0000008D",
+                  }}
+                  transition={{ type: "tween", ease: "easeOut" }}
+                >
+                  <div className="font-semibold flex text-white">
+                    Learn more about me
+                  </div>
+                  <img
+                    src="/icons/arrow-right.svg"
+                    alt={`Arrow icon`}
+                    className="hidden md:w-5 md:h-5 md:block"
+                  />
+                </motion.div>
+              </Link>
+              <Link className="flex text-base" href="/projects">
+                <motion.div
+                  className="md:px-4 px-4 md:py-4 py-2 rounded-xl border border-gray-400 flex items-center gap-2"
+                  whileTap={{ scale: 0.9 }}
+                  initial={{
+                    backgroundColor: "#0000008D",
+                  }}
+                  whileHover={{
+                    backgroundColor: "#121212FF",
+                  }}
+                  animate={{
+                    backgroundColor: "#0000008D",
+                  }}
+                  transition={{ type: "tween", ease: "easeOut" }}
+                >
+                  <div className="font-semibold flex text-white">
+                    Explore my projects
+                  </div>
+                  <img
+                    src="/icons/arrow-right.svg"
+                    alt={`Arrow icon`}
+                    className="hidden md:w-5 md:h-5 md:block"
+                  />
+                </motion.div>
+              </Link>
+            </div>
           </motion.div>
         </div>
 
-        {/* All items inside this motion.div will be rendered with a left-to-right transition */}
-        <div className="flex justify-center">
+        {/* Latest project */}
+        <div className="mt-4 flex justify-center">
           <motion.div
             initial={{
               opacity: 0,
@@ -69,7 +120,7 @@ export default function Home() {
             <SpotlightCard_HomePage
               spotlightHeader="Latest project"
               spotlightTitle="Things Better Left Unknown"
-              spotlightContent=<div className="font-roboto bg-space-cadet/30 p-6 rounded-2xl border-gray-400 border-2 max-w-sm md:max-w-4xl mx-8">
+              spotlightContent=<div>
                 <p className="font-bold text-2xl md:text-3xl text-center"></p>
                 <p className="font-medium text-2xl md:text-3xl -mt-4 text-center md:text-left"></p>
                 <div className="flex flex-col md:flex-row gap-4 items-center -mt-4">
@@ -105,15 +156,28 @@ export default function Home() {
                   </p>
                 </div>
                 <div className="mt-4 mb-1 flex justify-center md:gap-8 gap-4 max-w-full">
-                  <Link href="https://deeprestgames.itch.io/things-better-left-unknown">
-                    <button className="px-2 py-2 w-full max-w-xs md:w-48 bg-rose-quartz text-black font-bold rounded-lg shadow-2xl">
-                      Go to itch.io game page
-                    </button>
-                  </Link>
-                  <Link href="/projects">
-                    <button className="px-2 py-2 w-full max-w-xs md:w-48 bg-rose-quartz text-black font-bold rounded-lg shadow-2xl">
-                      Go to all projects
-                    </button>
+                  <Link
+                    className="flex text-base"
+                    href="https://deeprestgames.itch.io/things-better-left-unknown"
+                  >
+                    <motion.div
+                      className="md:px-4 px-4 md:py-4 py-2 rounded-xl border border-gray-400 flex items-center gap-2"
+                      whileTap={{ scale: 0.9 }}
+                      initial={{
+                        backgroundColor: "#0000008D",
+                      }}
+                      whileHover={{
+                        backgroundColor: "#121212FF",
+                      }}
+                      animate={{
+                        backgroundColor: "#0000008D",
+                      }}
+                      transition={{ type: "tween", ease: "easeOut" }}
+                    >
+                      <div className="font-semibold flex text-white">
+                        Go to game page
+                      </div>
+                    </motion.div>
                   </Link>
                 </div>
               </div>
