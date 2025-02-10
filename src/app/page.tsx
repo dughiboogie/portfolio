@@ -34,7 +34,7 @@ export default function Home() {
               Marco Dugatto | DughiBoogie
             </p>
             <p className="max-w-md md:max-w-3xl font-roboto text-xl text-center md:text-left md:text-2xl inline-block">
-              It's a me, Marco!<br></br>
+              It&apos;s a me, Marco!<br></br>
               I’m a game developer with a passion for engaging worlds and
               meaningful experiences.<br></br> I dream of crafting games that I
               would love to play, and that make the players feel the same
@@ -102,12 +102,13 @@ export default function Home() {
                     Game Jam 15.<br></br> There were 5 people working on the
                     game so the project management side has been a bit hectic,
                     but I learned a lot about pivoting according to the
-                    deadlines to meet everyone's needs and complete the project
-                    in time.<br></br>
+                    deadlines to meet everyone&apos;s needs and complete the
+                    project in time.<br></br>
                     This being said, it was a ton of fun working on this.
                     <br></br>
                     <br></br>
-                    The game is made in Godot, and it's fully playable online.
+                    The game is made in Godot, and it&apos;s fully playable
+                    online.
                     <br></br>
                     Check it out on itch.io!
                   </p>
@@ -175,7 +176,7 @@ export default function Home() {
                 <div className="mt-4">
                   <p>
                     I worked on this game for three months with a friend, and
-                    it's been a wild ride.<br></br>
+                    it&apos;s been a wild ride.<br></br>
                     It started as a fun project that we decided to do right
                     after our first game jam together, and it became a massive
                     puzzle game with some wacky mechanics and a somewhat deep
@@ -184,8 +185,8 @@ export default function Home() {
                     During this project I learned the real meaning of{" "}
                     <b>scope creep</b>. New ideas were continuously bouncing
                     around and discussions were always stimulating. We had to
-                    put real effort in saying "let's stop here and publish
-                    this".
+                    put real effort in saying &quot;let&apos;s stop here and
+                    publish this&quot;.
                   </p>
                   <div className="mt-4 mb-1 flex justify-center md:gap-8 gap-4 max-w-full">
                     <Link
@@ -224,7 +225,7 @@ export default function Home() {
               spotlightTitle=""
               spotlightContent=<div>
                 <p className="font-bold text-2xl md:text-3xl text-center"></p>
-                <p className="font-medium text-2xl md:text-3xl -mt-4 text-center md:text-left"></p>
+                <p className="font-medium text-2xl md:text-3xl -mt-4 text-center md:text-left<"></p>
                 <div className="flex flex-col gap-4 items-center -mt-4">
                   {/* Image Section */}
                   <img
@@ -246,7 +247,7 @@ export default function Home() {
                 <div className="mt-4">
                   <p>
                     I worked on this game for three months with a friend, and
-                    it's been a wild ride.<br></br>
+                    it&apos;s been a wild ride.<br></br>
                     It started as a fun project that we decided to do right
                     after our first game jam together, and it became a massive
                     puzzle game with some wacky mechanics and a somewhat deep
@@ -255,8 +256,8 @@ export default function Home() {
                     During this project I learned the real meaning of{" "}
                     <b>scope creep</b>. New ideas were continuously bouncing
                     around and discussions were always stimulating. We had to
-                    put real effort in saying "let's stop here and publish
-                    this".
+                    put real effort in saying &quot;let&apos;s stop here and
+                    publish this&quot;.
                   </p>
                   <div className="mt-4 mb-1 flex justify-center md:gap-8 gap-4 max-w-full">
                     <Link

@@ -1,5 +1,3 @@
-import Link from "next/link";
-
 interface SpotlightCardParameters {
   spotlightHeader: React.ReactNode;
   spotlightTitle: string;
