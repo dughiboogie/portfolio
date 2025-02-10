@@ -221,7 +221,7 @@ export default function Home() {
 
             {/* Hell o' Borus */}
             <SpotlightCard_HomePage
-              spotlightHeader="Pizza Time"
+              spotlightHeader="Hell o' Borus"
               spotlightTitle=""
               spotlightContent=<div>
                 <p className="font-bold text-2xl md:text-3xl text-center"></p>
@@ -246,23 +246,18 @@ export default function Home() {
                 {/* Second Paragraph Section */}
                 <div className="mt-4">
                   <p>
-                    I worked on this game for three months with a friend, and
-                    it&apos;s been a wild ride.<br></br>
-                    It started as a fun project that we decided to do right
-                    after our first game jam together, and it became a massive
-                    puzzle game with some wacky mechanics and a somewhat deep
-                    narrative.<br></br>
+                    I made this game with some friends in the span of two weeks.
+                    It was the first time we worked together, and it was the
+                    first time for any of us using Godot.<br></br>
                     <br></br>
-                    During this project I learned the real meaning of{" "}
-                    <b>scope creep</b>. New ideas were continuously bouncing
-                    around and discussions were always stimulating. We had to
-                    put real effort in saying &quot;let&apos;s stop here and
-                    publish this&quot;.
+                    Although it's a simple game it was a very nice experience,
+                    that made me do a deep dive into a new framework while
+                    managing a project with a strict deadline.
                   </p>
                   <div className="mt-4 mb-1 flex justify-center md:gap-8 gap-4 max-w-full">
                     <Link
                       className="flex text-base"
-                      href="https://deeprestgames.itch.io/pizza-time"
+                      href="https://dughiboogie.itch.io/hell-o-borus"
                       rel="noopener noreferrer"
                       target="_blank"
                     >
