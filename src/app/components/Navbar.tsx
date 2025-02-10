@@ -1,6 +1,7 @@
-import React, { useEffect, useState } from "react";
 import { motion } from "framer-motion";
+import { button } from "motion/react-client";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 
 interface NavbarButtonParameters {
   buttonLink: string; // Link of the button
@@ -13,6 +14,12 @@ function NavbarButton({
   buttonName,
   iconPath,
 }: NavbarButtonParameters) {
+  const pathName = usePathname();
+  const isActive = pathName === buttonLink;
+
+  console.log("Pathname: " + pathName);
+  console.log("buttonLink: " + buttonLink);
+
   return (
     <div className="flex m-1">
       <Link
@@ -20,11 +27,23 @@ function NavbarButton({
         href={buttonLink}
       >
         <motion.div
-          className="z-10 md:px-3 px-2 py-1 rounded-xl border border-gray-400 font-semibold flex items-center gap-2"
+          className={`z-10 md:px-3 px-2 py-1 rounded-xl border font-semibold flex items-center gap-2 ${
+            isActive
+              ? "bg-[#262626] border-[#9ca3af]"
+              : "bg-[#000000] border-[#000000]"
+          }`}
           whileTap={{ scale: 0.9 }}
-          initial={{ backgroundColor: "#000000", borderColor: "#000000" }}
+          initial={`${
+            isActive
+              ? "bg-[#262626] border-[#000000]"
+              : "bg-[#000000] border-[#000000]"
+          }`}
           whileHover={{ backgroundColor: "#262626", borderColor: "#9ca3af" }}
-          animate={{ backgroundColor: "#000000", borderColor: "#000000" }}
+          animate={`${
+            isActive
+              ? "bg-[#262626] border-[#9ca3af]"
+              : "bg-[#000000] border-[#000000]"
+          }`}
           transition={{ type: "tween", ease: "easeOut" }}
         >
           <img src={iconPath} alt={`${buttonName} icon`} className="w-5 h-5" />
@@ -68,9 +87,9 @@ const Navbar = () => {
           ></NavbarButton>
           */}
           <NavbarButton
-            buttonLink="/projects"
-            buttonName="Projects"
-            iconPath="/icons/projects.svg"
+            buttonLink="/games"
+            buttonName="Games"
+            iconPath="/icons/games.svg"
           ></NavbarButton>
         </div>
       </motion.div>
