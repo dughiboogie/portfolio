@@ -237,9 +237,9 @@ export default function Home() {
                     <p className="font-medium self-center italic text-md mb-0 mt-2">
                       Winter is almost over. An unknown warmth is starting to
                       spread. Coming change is inevitable. Spring is here!
-                      <br></br> Hell o’ Borus is a 2D endless runner game where
-                      the player controls Borus, a tiny helleborus seed that
-                      awakens after being lethargic during the winter.
+                      <br></br> Hell o&apos; Borus is a 2D endless runner game
+                      where the player controls Borus, a tiny helleborus seed
+                      that awakens after being lethargic during the winter.
                     </p>
                   </div>
                 </div>
@@ -250,9 +250,9 @@ export default function Home() {
                     It was the first time we worked together, and it was the
                     first time for any of us using Godot.<br></br>
                     <br></br>
-                    Although it's a simple game it was a very nice experience,
-                    that made me do a deep dive into a new framework while
-                    managing a project with a strict deadline.
+                    Although it&apos;s a simple game it was a very nice
+                    experience, that made me do a deep dive into a new framework
+                    while managing a project with a strict deadline.
                   </p>
                   <div className="mt-4 mb-1 flex justify-center md:gap-8 gap-4 max-w-full">
                     <Link
