@@ -230,7 +230,8 @@ export default function Home() {
                   {/* Image Section */}
                   <img
                     className="relative md:w-4/6 w-full flex"
-                    src="/HelloBorusCover.png"
+                    src="/portfolio/pictures/HelloBorusCover.png"
+                    alt="Hell o' Borus thumbnail"
                   ></img>
                   {/* First Paragraph Section */}
                   <div>
@@ -322,7 +323,7 @@ export default function Home() {
                       transition={{ type: "tween", ease: "easeOut" }}
                     >
                       <img
-                        src="/GitHub_Logo_White.png"
+                        src="/portfolio/logos/GitHub_Logo_White.png"
                         alt={`GitHub Logo`}
                         className="w-full"
                       />
@@ -349,7 +350,7 @@ export default function Home() {
                       transition={{ type: "tween", ease: "easeOut" }}
                     >
                       <img
-                        src="/LinkedIn_2021.png"
+                        src="/portfolio/logos/LinkedIn_2021.png"
                         alt={`LinkedIn Logo`}
                         className="w-full"
                       />
@@ -376,7 +377,7 @@ export default function Home() {
                       transition={{ type: "tween", ease: "easeOut" }}
                     >
                       <img
-                        src="/Itch_io_logo.svg"
+                        src="/portfolio/logos/Itch_io_logo.svg"
                         alt={`itch.io Logo`}
                         className="w-full"
                       />
